@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .nav-tabs, .tab-content{
+            display:none;
+        }
+    </style>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body id="friendsApp">
+
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Lobby</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">My Rooms</a></li>
+            <!--<li role="presentation"><a href="#createTable" aria-controls="createTable" role="tab" data-toggle="tab">Create Table</a></li>-->
+            <li role="presentation"><a href="#turnaments" aria-controls="turnaments" role="tab" data-toggle="tab">Turnaments</a></li>
+            
+        </ul>
+     
+    <div class="tab-content ">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <fieldset>
+                <legend>Table:</legend>
+                Rows: <input type="number" min="3" max="9" id="tb-rows" class="col col-xs-12 col-cm-12 col-md-12"><br>
+                Cols: <input type="number" min="3" max="9" id="tb-cols" class="col col-xs-12 col-cm-12 col-md-12"><br>
+            </fieldset>
+            <ul id="lobbyUsers"></ul>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+            <div class="table">
+                <ul class="nav nav-tabs nav-table" role="tablist"></ul>
+                <div class="tab-content tbls-content">
+                </div>
+            </div>
+        </div> 
+        <!--<div role="tabpanel" class="tab-pane" id="createTable">
+            <div id="createTableForm">
+
+                <p>
+                    <label>rows</label>
+                    <input type="number" min="3" max="9" id="rows" />
+                </p>
+
+                <p>
+                    <label>cols</label>
+                    <input type="number" min="3" id="cols" />
+                </p>
+                <input type="button" value="Create a table" id="create" />
+            </div>
+        </div>-->
+
+        <div role="tabpanel" class="tab-pane" id="turnaments">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#schedule" aria-controls="schedule" role="tab" data-toggle="tab">Schedule</a></li>
+                <li role="presentation"><a href="#sitAndGo" aria-controls="sitAndGo" role="tab" data-toggle="tab">SitAndGo</a></li>
+                <li role="presentation"><a href="#free" aria-controls="free" role="tab" data-toggle="tab">Free</a></li>
+
+            </ul>
+                <div class="tab-content ">
+                    <div role="tabpanel" class="tab-pane" id="schedule">
+                        Schedule 
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="sitAndGo">
+                        SitAndGo
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="free">
+                        free 
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+
+            <div id="inviteUserDiv">
+                <div class="info"></div>
+                <div class="btn btn-success accept">Accept</div>
+                <div class="btn btn-danger decline">Decline</div>
+            </div>
+
+
+            <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
+            <script src="http://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.0.3.min.js"></script>
+            <script type="text/javascript" src="http://boyanzhelyazkov.com/signalr/hubs"></script>
+
+
+            <div id='loginform' style="margin-left: 30px;">
+                <b>Login:</b>
+                <br /><br />
+                <input type="text" id="username" maxlength="100" style="width: 200px;" />
+                <br /><br />
+                <input type="button" id="login" value="Login" />
+                <br /><br />
+
+            </div> 
+
+            <script src="TalkingWithServer.js"></script>
+            <script src="custom.js"></script>
+
+</body>
+</html>

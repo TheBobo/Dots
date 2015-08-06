@@ -1,0 +1,98 @@
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\SignalRChat.dll.config
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\SignalRChat.dll
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\SignalRChat.pdb
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\Microsoft.Owin.dll
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\Microsoft.Owin.Security.dll
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\Newtonsoft.Json.dll
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\Owin.dll
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\Microsoft.Owin.xml
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\Microsoft.Owin.Security.xml
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\Newtonsoft.Json.xml
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\obj\Debug\SignalRChat.csprojResolveAssemblyReference.cache
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\obj\Debug\SignalRChat.dll
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\obj\Debug\SignalRChat.pdb
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\EntityFramework.dll
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\EntityFramework.SqlServer.dll
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\SignalRChatDatabase.dll
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\SignalRChatDatabase.pdb
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\EntityFramework.xml
+C:\Users\boyan.zhelyazkov\Desktop\C#\SignalRChat\bin\EntityFramework.SqlServer.xml
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\SignalRChat.dll.config
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\SignalRChat.dll
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\SignalRChat.pdb
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\EntityFramework.dll
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\EntityFramework.SqlServer.dll
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\Newtonsoft.Json.dll
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\SignalRChatDatabase.dll
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\SignalRChatDatabase.pdb
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\EntityFramework.xml
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\EntityFramework.SqlServer.xml
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\Microsoft.Owin.xml
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\Microsoft.Owin.Security.xml
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\obj\Debug\SignalRChat.csprojResolveAssemblyReference.cache
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\obj\Debug\SignalRChat.dll
+C:\Users\boyan.zhelyazkov\Documents\Visual Studio 2013\Projects\DotsV1\DotsServer\SignalRChat\obj\Debug\SignalRChat.pdb
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\SignalRChat.dll.config
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\SignalRChat.dll
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\SignalRChat.pdb
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\EntityFramework.dll
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\EntityFramework.SqlServer.dll
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\Microsoft.Owin.dll
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\Microsoft.Owin.Security.dll
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\Newtonsoft.Json.dll
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\Owin.dll
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\SignalRChatDatabase.dll
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\SignalRChatDatabase.pdb
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\EntityFramework.xml
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\EntityFramework.SqlServer.xml
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\Microsoft.Owin.xml
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\Microsoft.Owin.Security.xml
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\bin\Newtonsoft.Json.xml
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\obj\Debug\SignalRChat.csprojResolveAssemblyReference.cache
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\obj\Debug\SignalRChat.dll
+C:\Users\Boyan\Desktop\DotsV1\DotsServer\SignalRChat\obj\Debug\SignalRChat.pdb
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\SignalRChat.dll.config
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\SignalRChat.dll
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\SignalRChat.pdb
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\EntityFramework.dll
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\EntityFramework.SqlServer.dll
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\Microsoft.Owin.dll
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\Microsoft.Owin.Security.dll
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\Newtonsoft.Json.dll
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\Owin.dll
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\SignalRChatDatabase.dll
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\SignalRChatDatabase.pdb
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\EntityFramework.xml
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\EntityFramework.SqlServer.xml
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\Microsoft.Owin.xml
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\Microsoft.Owin.Security.xml
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\bin\Newtonsoft.Json.xml
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\obj\Debug\SignalRChat.csprojResolveAssemblyReference.cache
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\obj\Debug\SignalRChat.dll
+C:\Users\boyan.zhelyazkov\Desktop\DotsServer\SignalRChat\obj\Debug\SignalRChat.pdb

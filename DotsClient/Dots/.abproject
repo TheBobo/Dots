@@ -1,0 +1,44 @@
+{
+  "ProjectName": "Dots",
+  "ProjectGuid": "ecd5fb9e-08dc-40a5-8a0c-0edcca15b322",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.Dots",
+  "DisplayName": "Dots",
+  "Author": "",
+  "Description": "Dots",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{5e046734-dfea-40bd-8643-b21aa27ea842}",
+  "WP8ProductID": "{1a8d6ce4-b2fc-47d5-8ab3-6b8e0aa26b9d}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.Dots",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "iOSDeploymentTarget": "6.0"
+}

@@ -1,0 +1,163 @@
+           body,p,span,div{
+                padding: 0;
+                margin: 0;
+            }
+            
+            .dot{
+                border-radius: 6px;
+                width: 6px;
+                height: 6px;
+                position:absolute;
+                float: left;
+                background-color: #ff0000;
+                z-index: 3;
+            }
+            
+            .box{
+                position:absolute;
+                width: 42px;
+                height: 42px;
+                margin: 1px;
+                float: left;
+                background-color: orange;
+                opacity: .3;
+            }
+            
+            .line{
+                position:absolute;
+                float: left;
+                background-color: gray;
+                opacity: .3;
+            }
+            
+            .horizontal{
+                width: 50px;
+                height: 6px;
+            }
+            
+            .vertical{
+                width: 6px;
+                height: 50px;
+            }
+            
+            .table{
+                    height: 100%;
+                    position: relative;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+            }
+            
+            .clear{
+                content: "";
+                clear: both;
+            }
+            
+            .tbl{
+                top:10px;
+            }
+            
+.foldtr {
+  position: relative;
+
+}
+ 
+.foldtr:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 70px solid #eee;
+  border-right: 70px solid transparent;
+
+}
+ 
+.foldtr:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0px;
+  height: 0px;
+  border-top: 69px solid #ddd; 
+  border-left: 69px solid transparent;
+}
+            .article{
+                min-height: 169px;
+                max-width: 300px;
+                background: #fff;
+                padding:10px 79px 10px 20px;
+                
+            }
+            
+            body{
+                background: #ddd;
+            }
+
+            .tbl{
+                position:relative;
+            }
+
+            #inviteUserDiv{
+                display:none;
+                width:300px;
+                margin:0 auto;
+                background-color:#aaa;
+                padding:10px;
+            }
+            /*
+            .turnament{
+                border-width:1px;
+                border-color:skyblue;
+                border-style:solid;
+                border-left-width:10px;
+                display: inline-block;
+                padding: 0;
+                width: 99%;
+            }
+            */
+            .turnament{
+                padding-top:10px;
+                padding-bottom:5px;
+                border-width:0;
+                border-bottom-width:3px;
+                
+                border-color:skyblue;
+                border-style:solid;
+                background-color:#bbb;
+                margin-top:3px;
+            }
+
+            .name{
+                font-size:20px;
+                text-align:center;
+                color:white;
+                font-weight:bold;
+            }
+
+            .colTur{
+                width:50%;
+                float:left;
+                text-align:right;
+                padding-right:10px;
+            }
+
+            .colTurLeft{
+                text-align:left;
+                padding-left:10px
+            }
+
+            .reg,.unreg{
+                width:100%;   
+            }
+
+            .taken{
+                margin-left:5px;
+            }
+
+            .clear{
+                content:"";
+                clear:both;
+            }
