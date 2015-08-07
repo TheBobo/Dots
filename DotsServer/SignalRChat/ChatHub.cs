@@ -268,6 +268,9 @@ namespace SignalRChat
      NewState(cellId, gt.GameId, gt.UserInTurn, newBoardState);
 
      var hasCloseBox = CloseBox(currentObj, tableCellObj, newBoardState, gt.GameId, gt.UserInTurn);
+
+     var meUserPf1 = context.Users.FirstOrDefault(x => x.DeviceId == myId);
+     Clients.Client(meUserPf1.UserWebClientId).allertAMessageOnly(hasCloseBox.RowUp + " " + hasCloseBox.ColUp + " " + hasCloseBox.RowDown + " " + hasCloseBox.ColDown);
      if (hasCloseBox.IsClose == false)
      {
 
