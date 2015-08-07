@@ -35,7 +35,7 @@ namespace SignalRChat
 
             _connections.Add(name, Context.ConnectionId);
 
-            Clients.Client(Context.ConnectionId).allertAMessageOnly("users: " + name + " Id:" + Context.ConnectionId);
+            Clients.Client(Context.ConnectionId).allertAMessageOnly("You are connected");
             Clients.Client(Context.ConnectionId).userClientId(Context.ConnectionId);
             return base.OnConnected();
         }
@@ -140,7 +140,7 @@ namespace SignalRChat
                 context.Users.Add(logUser);
             }
             context.SaveChanges();
-            Clients.All.allertAMessageOnly("users: " + username + " Id:" + userId);
+            //Clients.All.allertAMessageOnly("users: " + username + " Id:" + userId);
             // Call the broadcastMessage method to update clients.
             var users = context.Users.Where(x => x.IsOnline).ToList();
                      
@@ -269,11 +269,14 @@ namespace SignalRChat
 
      var hasCloseBox = CloseBox(currentObj, tableCellObj, newBoardState, gt.GameId, gt.UserInTurn);
 
-     var meUserPf1 = context.Users.FirstOrDefault(x => x.DeviceId == myId);
-     Clients.Client(meUserPf1.UserWebClientId).allertAMessageOnly(hasCloseBox.RowUp + " " + hasCloseBox.ColUp + " " + hasCloseBox.RowDown + " " + hasCloseBox.ColDown);
      if (hasCloseBox.IsClose == false)
      {
 
+         gt.UserInTurn = oponentId;
+         
+     }
+     else
+     {
          var meUserPf = context.Users.FirstOrDefault(x => x.DeviceId == myId);
          var oponentUserPf = context.Users.FirstOrDefault(x => x.DeviceId == oponentId);
          if (hasCloseBox.RowUp != 0 && hasCloseBox.ColUp != 0)
@@ -288,8 +291,6 @@ namespace SignalRChat
              Clients.Client(meUserPf.UserWebClientId).colorBox(myId, oponentId, tblId, boxId);
              Clients.Client(oponentUserPf.UserWebClientId).colorBox(myId, oponentId, tblId, boxId);
          }
-         gt.UserInTurn = oponentId;
-         
      }
      context.SaveChanges();
      return true;

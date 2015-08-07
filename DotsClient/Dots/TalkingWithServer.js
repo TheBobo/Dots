@@ -287,34 +287,17 @@ $(function () {
     };
 
     function colorBox(tableId, boxId, color) {
+        tableId = tableId.split('-')[1];
         var id = tableId + '-' + boxId;
-        var boxItem = $("div[boxId='" + tableId + "'").css("background", color);
+        $("div[boxId='" + id + "'").css("background", color);
+        $("div[boxId='" + id + "'").css("opacity", 1);
     }
 
     function drawLine1(tbl, id) {
-        //var line = $(".tbl[tbl='" + tbl + "'").find(".line[data-id='" + id + "'");
-        //var tableId = $(line).parent().attr("tbl");
-        //var lineId = $(line).attr("data-id");
-
         var tbl = tbl.split('-')[1];
         var lineId = tbl + "-" + id;
         $(".line[lineId='" + lineId + "'").css("background", "black");
-        // $(".line[lineId='" + lineId + "'").css("opacity", 1);
-        //$(".line[lineId='" + lineId + "'").attr("data-isSelected", 1);
-
-        //$(".tbl[tbl='" + tableId + "'").find(".line[data-id='" + lineId + "'")
-        //$(".tbl[tbl='" + tableId + "'").find(".line[data-id='" + lineId + "'").css("opacity", 1);
-        //$(".tbl[tbl='" + tableId + "'").find(".line[data-id='" + lineId + "'").attr("data-isSelected", 1);
-
-        //if (!CloseBox(line)) {
-        //    if (player == player1) {
-        //        player = player2;
-        //    }
-        //    else {
-        //        player = player1;
-        //    }
-        //}
-
+        $(".line[lineId='" + lineId + "'").css("opacity", 1);
     }
 
 
