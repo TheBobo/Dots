@@ -271,6 +271,26 @@ $(function () {
         }
     };
 
+    signalRChatHub.client.colorBox = function (myId, invitedUserId, tableId, boxId) {
+        var deviceId = device.uuid
+        if (myId == deviceId) {
+
+            tableId = "table-" + tableId;
+            colorBox(tableId, boxId,"purple");
+
+        }
+        else if (invitedUserId == deviceId) {
+            tableId = "table-" + tableId;
+            colorBox(tableId, boxId, "green");
+
+        }
+    };
+
+    function colorBox(tableId, boxId, color) {
+        var id = tableId + '-' + boxId;
+        var boxItem = $("div[boxId='" + tableId + "'").css("background", color);
+    }
+
     function drawLine1(tbl, id) {
         //var line = $(".tbl[tbl='" + tbl + "'").find(".line[data-id='" + id + "'");
         //var tableId = $(line).parent().attr("tbl");

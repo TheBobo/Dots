@@ -99,7 +99,8 @@ function buildTable(row, col, tableId, me, oponent) {
             else if (i % 2 == 1 && j % 2 == 1) {
                 var left = (parseInt(j / 2) * objWidth) + width5percent;
                 var top = (parseInt(i / 2) * objWidth) + width5percent;
-                result += "<div class='box ' style='width:" + (objWidth - width5percent - 2) + "px; height:" + (objWidth - width5percent - 2) + "px; left: " + (left) + "px; top:" + (top) + "px;' data-i='" + i + "+' data-j='" + j + "' data-id='" + i + "_" + j + "'></div>"
+                var boxId = tableId + "-" + i + "-" + j;
+                result += "<div class='box ' style='width:" + (objWidth - width5percent - 2) + "px; height:" + (objWidth - width5percent - 2) + "px; left: " + (left) + "px; top:" + (top) + "px;' data-i='" + i + "+' data-j='" + j + "' data-id='" + i + "_" + j + "' boxId='" + boxId + "'></div>"
             }
         }
     }

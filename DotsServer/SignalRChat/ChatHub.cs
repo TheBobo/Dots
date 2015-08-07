@@ -202,16 +202,18 @@ namespace SignalRChat
             DateTime dateTime = DateTime.Now;
             var table = context.GameTables.FirstOrDefault(x => x.GameId == tableId);
 
-            Clients.All.allertAMessageOnly("myId: " + myId + " oponent:" + oponent + " tableId:" + tableId + " lineId:" + lineId);
-          // if (table.UserInTurn == myId)
-          // {
-          //     DrawLine(tableId, lineId, oponent);
-          //     Clients.All.drawLine(myId, oponent, tableId, lineId);
-          // }
-          // else
-          // {
-          //     Clients.All.oponentOnTurn(myId);
-          // }
+            var meUserPf = context.Users.FirstOrDefault(x => x.DeviceId == myId);
+            var oponentUserPf = context.Users.FirstOrDefault(x => x.DeviceId == oponent);
+            if (table.UserInTurn == myId)
+            {
+                DrawLine(tableId, lineId, oponent, myId);
+                Clients.Client(meUserPf.UserWebClientId).drawLine(myId, oponent, tableId, lineId);
+                Clients.Client(oponentUserPf.UserWebClientId).drawLine(myId, oponent, tableId, lineId);
+            }
+            else
+            {
+                Clients.Client(meUserPf.UserWebClientId).oponentOnTurn(myId);
+            }
         }
 
         public void LogOut(string deviceId)
@@ -221,7 +223,7 @@ namespace SignalRChat
             context.SaveChanges();
         }
         
- public bool DrawLine(string tblId, string cellId,string oponentId)
+ public bool DrawLine(string tblId, string cellId,string oponentId, string myId )
  {
 
 
@@ -266,8 +268,23 @@ namespace SignalRChat
      NewState(cellId, gt.GameId, gt.UserInTurn, newBoardState);
 
      var hasCloseBox = CloseBox(currentObj, tableCellObj, newBoardState, gt.GameId, gt.UserInTurn);
-     if (hasCloseBox == false)
+     if (hasCloseBox.IsClose == false)
      {
+
+         var meUserPf = context.Users.FirstOrDefault(x => x.DeviceId == myId);
+         var oponentUserPf = context.Users.FirstOrDefault(x => x.DeviceId == oponentId);
+         if (hasCloseBox.RowUp != 0 && hasCloseBox.ColUp != 0)
+         {
+             string boxId = hasCloseBox.RowUp + "-" + hasCloseBox.ColUp;
+             Clients.Client(meUserPf.UserWebClientId).colorBox(myId, oponentId, tblId, boxId);
+             Clients.Client(oponentUserPf.UserWebClientId).colorBox(myId, oponentId, tblId, boxId);
+         }
+         if (hasCloseBox.RowDown != 0 && hasCloseBox.ColDown != 0)
+         {
+             string boxId = hasCloseBox.RowDown + "-" + hasCloseBox.ColDown;
+             Clients.Client(meUserPf.UserWebClientId).colorBox(myId, oponentId, tblId, boxId);
+             Clients.Client(oponentUserPf.UserWebClientId).colorBox(myId, oponentId, tblId, boxId);
+         }
          gt.UserInTurn = oponentId;
          
      }
@@ -288,12 +305,13 @@ namespace SignalRChat
      context.SaveChanges();
  }
 
-        public  bool CloseBox(CellObj cellObj, List<CellObj> tableComponentsObj, StringBuilder boardState, string gameId, string userId )
+ public CloseBox CloseBox(CellObj cellObj, List<CellObj> tableComponentsObj, StringBuilder boardState, string gameId, string userId)
         {
             string lastCellId = tableComponentsObj[tableComponentsObj.Count-1].Id;
             CellObj lastCell = new CellObj(lastCellId);
             lastCell.Row--;
             lastCell.Col--;
+            CloseBox closed = new CloseBox(false);
 
     if (cellObj.IsHorizontal) {
         if (cellObj.Row == 0)
@@ -302,10 +320,12 @@ namespace SignalRChat
             var isTakenLeft = tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row + 1 && x.Col == cellObj.Col-1 && x.Taken);// (cellObj.Row + 1) + "_" + (cellObj.Col - 1);
             var isTakenRight =tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row + 1 && x.Col == cellObj.Col+1 && x.Taken);// (cellObj.Row + 1) + "_" + (col + 1);
             if (isTakenUp != null && isTakenLeft != null && isTakenRight   != null) {
-               
-                return true;
+                closed.IsClose = true;
+                closed.RowUp= cellObj.Row + 1;
+                closed.ColUp= cellObj.Col;
+                return closed;
             }
-            return false;
+            return closed;
         }
         else if (cellObj.Row == lastCell.Row) {
            
@@ -313,27 +333,34 @@ namespace SignalRChat
             var isTakenLeft = tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row - 1 && x.Col == cellObj.Col-1 && x.Taken);
             var isTakenRight =tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row - 1 && x.Col == cellObj.Col+1 && x.Taken);
             if (isTakenUp != null && isTakenLeft != null && isTakenRight   != null) {
-                return true;
+                 closed.IsClose = true;
+                closed.RowUp= cellObj.Row - 1;
+                closed.ColUp=cellObj.Col;
+                return closed;
             }
-            return false;
+            return closed;
         }
         else {
-            var result = false;
 
            var isTakenUp = tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row - 2 && x.Col == cellObj.Col && x.Taken);
             var isTakenLeft = tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row - 1 && x.Col == cellObj.Col-1 && x.Taken);
             var isTakenRight =tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row - 1 && x.Col == cellObj.Col+1 && x.Taken);
             if (isTakenUp != null && isTakenLeft != null && isTakenRight   != null) {
-                result = true;
+                 closed.IsClose = true;
+                closed.RowUp= cellObj.Row - 1;
+                closed.ColUp= cellObj.Col;
             }
 
              isTakenUp = tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row + 2 && x.Col == cellObj.Col && x.Taken);
              isTakenLeft = tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row + 1 && x.Col == cellObj.Col-1 && x.Taken);
              isTakenRight =tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row + 1 && x.Col == cellObj.Col+1 && x.Taken);
             if (isTakenUp != null && isTakenLeft != null && isTakenRight   != null) {
-                result = true;
+                closed.IsClose = true;
+                closed.RowUp= cellObj.Row + 1;
+                closed.ColUp= cellObj.Col;
+                return closed;
             }
-            return result;
+            return closed;
 
         }
     }
@@ -344,18 +371,24 @@ namespace SignalRChat
             var isTakenLeft = tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row - 1 && x.Col == cellObj.Col+1 && x.Taken);
             var isTakenRight =tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row + 1 && x.Col == cellObj.Col+1 && x.Taken);
             if (isTakenUp != null && isTakenLeft != null && isTakenRight   != null) {
-                return true;
+                closed.IsClose = true;
+                closed.RowUp= cellObj.Row;
+                closed.ColUp= cellObj.Col+1;
+                return closed;
             }
-            return false;
+            return closed;
         }
         else if (cellObj.Col == lastCell.Col) {
            var isTakenUp = tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row  && x.Col == cellObj.Col-2 && x.Taken);
             var isTakenLeft = tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row - 1 && x.Col == cellObj.Col-1 && x.Taken);
             var isTakenRight =tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row + 1 && x.Col == cellObj.Col-1 && x.Taken);
             if (isTakenUp != null && isTakenLeft != null && isTakenRight   != null) {
-                return true;
+                 closed.IsClose = true;
+                closed.RowUp= cellObj.Row;
+                closed.ColUp=cellObj.Col-1;
+                return closed;
             }
-            return false;
+            return closed;
         }
         else {
             var result = false;
@@ -364,7 +397,9 @@ namespace SignalRChat
             var isTakenRight =tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row + 1 && x.Col == cellObj.Col-1 && x.Taken);
             if (isTakenUp != null && isTakenLeft != null && isTakenRight   != null) {
 
-                result = true;
+                  closed.IsClose = true;
+                closed.RowUp= cellObj.Row;
+                closed.ColUp=cellObj.Col-1;
             }
 
              isTakenUp = tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row && x.Col == cellObj.Col + 2 && x.Taken);
@@ -372,9 +407,11 @@ namespace SignalRChat
              isTakenRight = tableComponentsObj.FirstOrDefault(x => x.Row == cellObj.Row + 1 && x.Col == cellObj.Col + 1 && x.Taken);
             if (isTakenUp != null && isTakenLeft != null && isTakenRight != null)
             {
-                result = true;
+                  closed.IsClose = true;
+                closed.RowUp= cellObj.Row;
+                closed.ColUp= cellObj.Col+1;
             }
-            return result;
+            return closed;
 
         }
     }

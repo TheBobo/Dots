@@ -111,6 +111,7 @@
   <ItemGroup>
     <Compile Include="CellObj.cs" />
     <Compile Include="ChatHub.cs" />
+    <Compile Include="CloseBox.cs" />
     <Compile Include="ConnectionMapping.cs" />
     <Compile Include="Enums\TurnamentsType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
