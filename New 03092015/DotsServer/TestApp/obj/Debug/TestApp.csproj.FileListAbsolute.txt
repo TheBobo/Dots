@@ -1,0 +1,12 @@
+C:\Projects\Dots\Dots\DotsServer\TestApp\bin\Debug\TestApp.exe.config
+C:\Projects\Dots\Dots\DotsServer\TestApp\obj\Debug\TestApp.csprojResolveAssemblyReference.cache
+C:\Projects\Dots\Dots\DotsServer\TestApp\bin\Debug\TestApp.exe
+C:\Projects\Dots\Dots\DotsServer\TestApp\bin\Debug\TestApp.pdb
+C:\Projects\Dots\Dots\DotsServer\TestApp\bin\Debug\EntityFramework.dll
+C:\Projects\Dots\Dots\DotsServer\TestApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\Dots\Dots\DotsServer\TestApp\bin\Debug\SignalRChatDatabase.dll
+C:\Projects\Dots\Dots\DotsServer\TestApp\bin\Debug\SignalRChatDatabase.pdb
+C:\Projects\Dots\Dots\DotsServer\TestApp\bin\Debug\EntityFramework.xml
+C:\Projects\Dots\Dots\DotsServer\TestApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\Dots\Dots\DotsServer\TestApp\obj\Debug\TestApp.exe
+C:\Projects\Dots\Dots\DotsServer\TestApp\obj\Debug\TestApp.pdb
